@@ -1,0 +1,11 @@
+Minimal platformer:
+Player can jump, move
+
+There are blocks that can be digged up:
+They drop money
+
+With money the player can buy shovel upgrades:
+Faster digging
+Stronger shovel to dig harder material.
+
+https://trello.com/b/1QFprLtk/mb-gamejam1
