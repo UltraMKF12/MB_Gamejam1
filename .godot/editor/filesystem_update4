@@ -1,1 +1,4 @@
+res://world.tscn
 res://player.tscn
+res://Player.gd
+res://world.gd

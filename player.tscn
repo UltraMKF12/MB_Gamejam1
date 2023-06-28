@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://db3ywd5be25om"]
+[gd_scene load_steps=15 format=3 uid="uid://db3ywd5be25om"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_unx65"]
 [ext_resource type="Texture2D" uid="uid://bbws4xhr1tqi4" path="res://PlayerJump.png" id="2_2cdqh"]
 [ext_resource type="Texture2D" uid="uid://bhd654lndtkq3" path="res://Player.png" id="3_foi6w"]
+[ext_resource type="FontFile" uid="uid://c1qt3ho5nbudt" path="res://Kenney Pixel.ttf" id="4_ba6f3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ce5t8"]
 animations = [{
@@ -115,6 +116,16 @@ _data = {
 "moving": SubResource("Animation_mjc4e")
 }
 
+[sub_resource type="FontVariation" id="FontVariation_0amur"]
+base_font = ExtResource("4_ba6f3")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e68eb"]
+bg_color = Color(0.239216, 0.239216, 0.239216, 0.392157)
+border_color = Color(0, 0, 0, 0.784314)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fypoy"]
+bg_color = Color(1, 0.576471, 0, 1)
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_unx65")
 
@@ -139,3 +150,19 @@ lifetime = 1.5
 libraries = {
 "": SubResource("AnimationLibrary_tca6s")
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -15.0
+offset_top = -10.0
+offset_right = -12.0
+offset_bottom = 9.0
+theme_override_fonts/font = SubResource("FontVariation_0amur")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/background = SubResource("StyleBoxFlat_e68eb")
+theme_override_styles/fill = SubResource("StyleBoxFlat_fypoy")
+value = 56.0
+fill_mode = 3
+show_percentage = false

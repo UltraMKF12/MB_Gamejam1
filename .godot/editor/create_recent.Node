@@ -1,3 +1,12 @@
+HBoxContainer
+Label
+TextureRect
+Panel
+CanvasLayer
+ColorRect
+ProgressBar
+Control
+AudioStreamPlayer
 AnimationPlayer
 GPUParticles2D
 TileMap
