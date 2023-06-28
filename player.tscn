@@ -1,0 +1,141 @@
+[gd_scene load_steps=11 format=3 uid="uid://db3ywd5be25om"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_unx65"]
+[ext_resource type="Texture2D" uid="uid://bbws4xhr1tqi4" path="res://PlayerJump.png" id="2_2cdqh"]
+[ext_resource type="Texture2D" uid="uid://bhd654lndtkq3" path="res://Player.png" id="3_foi6w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ce5t8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2cdqh")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_foi6w")
+}],
+"loop": true,
+"name": &"move",
+"speed": 0.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pg0s6"]
+radius = 6.0
+height = 18.0
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_422a6"]
+particle_flag_disable_z = true
+direction = Vector3(0, 1, 0)
+spread = 65.84
+gravity = Vector3(0, 98, 0)
+initial_velocity_min = 31.58
+initial_velocity_max = 42.1
+angular_velocity_min = 29.19
+angular_velocity_max = 75.79
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+scale_min = 2.0
+scale_max = 3.0
+color = Color(1, 0.772549, 0, 1)
+hue_variation_min = -0.08
+hue_variation_max = 0.07
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.0
+
+[sub_resource type="Animation" id="Animation_6jseq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_g2rdt"]
+resource_name = "flying"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.9, 0.9), Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_mjc4e"]
+resource_name = "moving"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.139626, 0.0, 0.139626, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tca6s"]
+_data = {
+"RESET": SubResource("Animation_6jseq"),
+"flying": SubResource("Animation_g2rdt"),
+"moving": SubResource("Animation_mjc4e")
+}
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_unx65")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ce5t8")
+animation = &"move"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_pg0s6")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(0, 9)
+emitting = false
+amount = 100
+process_material = SubResource("ParticleProcessMaterial_422a6")
+lifetime = 1.5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tca6s")
+}
