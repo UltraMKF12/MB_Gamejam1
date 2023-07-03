@@ -9,3 +9,11 @@ func _process(_delta):
 	
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
+	
+	if Input.is_action_just_pressed("dig"):
+		var mouse_pos = get_global_mouse_position()
+		var map_coord = $Ground.local_to_map(mouse_pos)
+		
+		var data_ground = $Ground.get_cell_tile_data(0, map_coord)
+		if data_ground:
+			print("Hit Ground")
