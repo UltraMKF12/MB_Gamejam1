@@ -1,38 +1,38 @@
-2a60927148abd1d33b818b535e306557
-::res://::1688350069
-block.gd::GDScript::-1::1688066625::0::1::::<>StaticBody2D<>::
-block.tscn::PackedScene::8054632160418119319::1688152907::0::1::::<><>::res://block.gd<>uid://fu7kdh03gee1
-footstep_grass_000.ogg::AudioStreamOggVorbis::3182474913174653213::1687962445::1687962517::1::::<><>::
-footstep_grass_001.ogg::AudioStreamOggVorbis::6601189642764961707::1687962203::1687962244::1::::<><>::
-footstep_grass_002.ogg::AudioStreamOggVorbis::7847848993275188249::1687962217::1687962244::1::::<><>::
-footstep_grass_003.ogg::AudioStreamOggVorbis::4236938194927840412::1687962228::1687962244::1::::<><>::
-footstep_grass_004.ogg::AudioStreamOggVorbis::1151468549228783662::1687962241::1687962244::1::::<><>::
-footstep_snow_000.ogg::AudioStreamOggVorbis::8532757011317006777::1687962461::1687962517::1::::<><>::
-footstep_snow_001.ogg::AudioStreamOggVorbis::142925755433553957::1687962474::1687962517::1::::<><>::
-footstep_snow_002.ogg::AudioStreamOggVorbis::9077715642678504627::1687962488::1687962517::1::::<><>::
-footstep_snow_003.ogg::AudioStreamOggVorbis::8621928088752197135::1687962501::1687962517::1::::<><>::
-footstep_snow_004.ogg::AudioStreamOggVorbis::5474531437324327836::1687962513::1687962517::1::::<><>::
-icon.svg::CompressedTexture2D::6178801349329185252::1687891282::1687891291::1::::<><>::
-Kenney Blocks.ttf::FontFile::2141400854692934827::1687963467::1687963620::1::::<><>::
-Kenney Mini.ttf::FontFile::2862846376585851653::1687963492::1687963624::1::::<><>::
-Kenney Pixel.ttf::FontFile::6631985361803110881::1687963492::1687963628::1::::<><>::
-money.png::CompressedTexture2D::307690386421364435::1687966318::1687966325::1::::<><>::
-Player.gd::GDScript::-1::1687966028::0::1::::<>CharacterBody2D<>::
-Player.png::CompressedTexture2D::2885873063779845516::1687909844::1687909871::1::::<><>::
-player.tscn::PackedScene::7288750171089372184::1688066599::0::1::::<><>::res://Player.gd<>uid://bbws4xhr1tqi4<>uid://bhd654lndtkq3<>uid://c1qt3ho5nbudt
-PlayerJump.png::CompressedTexture2D::2503171751472083589::1687909844::1687909879::1::::<><>::
-README.md::TextFile::-1::1687891381::0::1::::<><>::
-tile_0000.png::CompressedTexture2D::394192744536158210::1688066023::1688066023::1::::<><>::
-world.gd::GDScript::-1::1688066631::0::1::::<>Node2D<>::
-world.tscn::PackedScene::1553378413643001680::1688152907::0::1::::<><>::uid://dhh07d3u5adt3<>res://world.gd<>uid://ciro2nqhp12cf<>uid://db3ywd5be25om<>uid://b4hobqqvxvbmb<>uid://c1qt3ho5nbudt<>uid://enbu6040pc4j<>uid://dm0yu52p07qqh
-::res://Gamedesign/::1687892789
-Gameplan.txt::TextFile::-1::1687892564::0::1::::<><>::
-Gameproof.png::CompressedTexture2D::4732605598120766646::1687891230::1687892789::1::::<><>::
-::res://Tilemaps/::1687992457
-marble_packed.png::CompressedTexture2D::2688002869034702509::1687992457::1687992457::1::::<><>::
-rock_packed.png::CompressedTexture2D::4437200483243273557::1687992454::1687992454::1::::<><>::
-sand_packed.png::CompressedTexture2D::978659552929079384::1687992450::1687992450::1::::<><>::
-stone_packed.png::CompressedTexture2D::1100874699080666360::1687992446::1687992446::1::::<><>::
-tilemap.png::CompressedTexture2D::2342108963897899215::1687945638::1687945638::1::::<><>::
-tilemap_packed.png::CompressedTexture2D::7666609872821443342::1687945576::1687945578::1::::<><>::
-tiles_packed.png::CompressedTexture2D::5370345500503208789::1687893193::1687893193::1::::<><>::
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1706110519
+block.gd::GDScript::-1::1688063025::0::1::::<>StaticBody2D<>::
+block.tscn::PackedScene::8054632160418119319::1691699855::0::1::::<><>::res://block.gd<>uid://fu7kdh03gee1::::res://tile_0000.png
+footstep_grass_000.ogg::AudioStreamOggVorbis::3182474913174653213::1687958845::1687958917::1::::<><>::
+footstep_grass_001.ogg::AudioStreamOggVorbis::6601189642764961707::1687958603::1687958644::1::::<><>::
+footstep_grass_002.ogg::AudioStreamOggVorbis::7847848993275188249::1687958617::1687958644::1::::<><>::
+footstep_grass_003.ogg::AudioStreamOggVorbis::4236938194927840412::1687958628::1687958644::1::::<><>::
+footstep_grass_004.ogg::AudioStreamOggVorbis::1151468549228783662::1687958641::1687958644::1::::<><>::
+footstep_snow_000.ogg::AudioStreamOggVorbis::8532757011317006777::1687958861::1687958917::1::::<><>::
+footstep_snow_001.ogg::AudioStreamOggVorbis::142925755433553957::1687958874::1687958917::1::::<><>::
+footstep_snow_002.ogg::AudioStreamOggVorbis::9077715642678504627::1687958888::1687958917::1::::<><>::
+footstep_snow_003.ogg::AudioStreamOggVorbis::8621928088752197135::1687958901::1687958917::1::::<><>::
+footstep_snow_004.ogg::AudioStreamOggVorbis::5474531437324327836::1687958913::1687958917::1::::<><>::
+icon.svg::CompressedTexture2D::6178801349329185252::1687887682::1687887691::1::::<><>::
+Kenney Blocks.ttf::FontFile::2141400854692934827::1687959867::1687960020::1::::<><>::
+Kenney Mini.ttf::FontFile::2862846376585851653::1687959892::1687960024::1::::<><>::
+Kenney Pixel.ttf::FontFile::6631985361803110881::1687959892::1687960028::1::::<><>::
+money.png::CompressedTexture2D::307690386421364435::1687962718::1687962725::1::::<><>::
+Player.gd::GDScript::-1::1687962428::0::1::::<>CharacterBody2D<>::
+Player.png::CompressedTexture2D::2885873063779845516::1687906244::1687906271::1::::<><>::
+player.tscn::PackedScene::7288750171089372184::1688062999::0::1::::<><>::res://Player.gd<>uid://bbws4xhr1tqi4::::res://PlayerJump.png<>uid://bhd654lndtkq3::::res://Player.png<>uid://c1qt3ho5nbudt::::res://Kenney Pixel.ttf
+PlayerJump.png::CompressedTexture2D::2503171751472083589::1687906244::1687906279::1::::<><>::
+README.md::TextFile::-1::1687887781::0::1::::<><>::
+tile_0000.png::CompressedTexture2D::394192744536158210::1688062423::1688062423::1::::<><>::
+world.gd::GDScript::-1::1688063031::0::1::::<>Node2D<>::
+world.tscn::PackedScene::1553378413643001680::1691699854::0::1::::<><>::uid://dhh07d3u5adt3::::res://Tilemaps/tilemap_packed.png<>res://world.gd<>uid://ciro2nqhp12cf::::res://Tilemaps/tiles_packed.png<>uid://db3ywd5be25om::::res://player.tscn<>uid://b4hobqqvxvbmb::::res://Tilemaps/rock_packed.png<>uid://c1qt3ho5nbudt::::res://Kenney Pixel.ttf<>uid://enbu6040pc4j::::res://money.png<>uid://dm0yu52p07qqh::::res://block.tscn
+::res://Gamedesign/::1687889189
+Gameplan.txt::TextFile::-1::1687888964::0::1::::<><>::
+Gameproof.png::CompressedTexture2D::4732605598120766646::1687887630::1687889189::1::::<><>::
+::res://Tilemaps/::1687988857
+marble_packed.png::CompressedTexture2D::2688002869034702509::1687988857::1687988857::1::::<><>::
+rock_packed.png::CompressedTexture2D::4437200483243273557::1687988854::1687988854::1::::<><>::
+sand_packed.png::CompressedTexture2D::978659552929079384::1687988850::1687988850::1::::<><>::
+stone_packed.png::CompressedTexture2D::1100874699080666360::1687988846::1687988846::1::::<><>::
+tilemap.png::CompressedTexture2D::2342108963897899215::1687942038::1687942038::1::::<><>::
+tilemap_packed.png::CompressedTexture2D::7666609872821443342::1687941976::1687941978::1::::<><>::
+tiles_packed.png::CompressedTexture2D::5370345500503208789::1687889593::1687889593::1::::<><>::
